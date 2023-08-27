@@ -40,3 +40,8 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: git_hook.zip
+
+    - name: Invoke deployment hook
+      uses: distributhor/workflow-webhook@v3
+      env:
+        webhook_url: "http://snuhdev.bitflow.ai/rels/hook"
