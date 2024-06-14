@@ -13,14 +13,14 @@ import (
 )
 
 // refs. https://docs.github.com/ko/rest/releases/releases?apiVersion=2022-11-28#get-a-release-by-tag-name
-const repo = "bitflow-si/healthpilot-vue"
+const repo = "{repo-name}/{project-name}"
 
 // const token = "Bearer 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" // Use OAUTH2 token
-const token = "Bearer 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"
+const token = "Bearer dsdsadsadsadsasaddadsa"
 const api_release_list_url = "https://api.github.com/repos/%s/releases/latest"
 const api_down_url = "https://api.github.com/repos/%s/releases/assets/%s"
 
-const direct_url = "/%s/healthpilot.zip"
+const direct_url = "/%s/release.zip"
 
 var download = true
 var assets = true
